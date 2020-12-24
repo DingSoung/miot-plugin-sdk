@@ -246,7 +246,7 @@ export default class BraceletInterconnection extends React.Component {
       }
     }) : console.log(
       `
-      请配置 navigation.props.onDisconnect, 例如 
+      请配置 navigation.props.onDisconnect, 例如
       onDisconnect:{mac, callback}=>{
         // do something
         callback(true)
@@ -277,7 +277,7 @@ export default class BraceletInterconnection extends React.Component {
       }
     }) : console.log(
       `
-      请配置 navigation.props.onConnect, 例如 
+      请配置 navigation.props.onConnect, 例如
       onConnect:{mac, callback}=>{
         // do something
         callback(true)
@@ -372,7 +372,7 @@ Search.defaultProps = {
   message: [],
   rotate: '0deg',
   onPress: null,
-  accessibility: { accessible: false, searchAccessibilityHint: '' }
+  accessibility: { accessible: true, searchAccessibilityHint: '' }
 };
 function List({ items, handle, headerMessage, footerMessage, accessibility }) {
   return (
@@ -422,7 +422,7 @@ List.defaultProps = {
   handle: null,
   headerMessage: null,
   footerMessage: null,
-  accessibility: { accessible: false, connectAccessibilityHint: '', disconnectAccessibilityHint: '' }
+  accessibility: { accessible: true, connectAccessibilityHint: '', disconnectAccessibilityHint: '' }
 };
 function Toast({ visible, message }) {
   if (!visible || !message) {

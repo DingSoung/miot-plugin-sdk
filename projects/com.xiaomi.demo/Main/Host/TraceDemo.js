@@ -62,7 +62,7 @@ export default class CryptoDemo extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={{ flex: 1, padding: 10 }}>
-          <OrbitView style={{ width: '100%', height: 150, flexDirection:'row' }}
+          <OrbitView style={{ width: '100%', height: 250, flexDirection:'row' }}
             ref={(ref) => { this.orbitView = ref; }}
             lineWidth='red'
             lineWidth={5}
@@ -74,8 +74,8 @@ export default class CryptoDemo extends React.Component {
             <View style={{ alignSelf: "flex-end", width: '100%', height: 30, backgroundColor: '#0007', flexDirection:'row', flexWrap:'nowrap' }}>
               {
                 [
-                  ['展示', () => { this.orbitView.displayPoint(BoardJSON) }],
-                  ['是否可撤销', () => { this.orbitView.canRevoke().then((res) => { alert(res).catch(err => { alert(JSON.stringify(err)) }) }) }],
+                  ['展示', () => { this.orbitView.displayPoints(BoardJSON) }],
+                  ['是否可撤销', () => { this.orbitView.canRevoke().then((res) => { alert(JSON.stringify(res)) }).catch(err => { alert(JSON.stringify(err)) }) }],
                   ['撤销', () => { this.orbitView.revoke() }],
                   ['清除', () => { this.orbitView.clear() }],
                 ].map(item => {

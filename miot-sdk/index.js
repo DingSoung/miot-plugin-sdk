@@ -35,7 +35,11 @@ import ResourcesPack from './resources';
 import ServiceInstance from './Service';
 import { SceneType as SceneTypeNames } from './service/scene';
 import DarkModeFactory from './darkmode';
+<<<<<<< HEAD
 export const API_LEVEL = 10049
+=======
+export const API_LEVEL = 10053
+>>>>>>> 7284f59ae9193968e7256aa44ef444c6427961f8
 /**
  * 插件包基本配置
  * {@link module:miot/Package}
